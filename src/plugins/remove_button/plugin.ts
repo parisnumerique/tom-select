@@ -37,7 +37,7 @@ export default function(this:TomSelect, userOptions:RBOptions) {
 		return;
 	}
 
-	var html = '<a href="javascript:void(0)" class="' + options.className + '" tabindex="-1" title="' + escape_html(options.title) + '">' + options.label + '</a>';
+	var html = '<a href="javascript:void(0)" class="' + options.className + '" title="' + escape_html(options.title) + '">' + options.label + '</a>';
 
 	self.hook('after','setupTemplates',() => {
 
